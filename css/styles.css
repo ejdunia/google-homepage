@@ -11,7 +11,6 @@ body{
     justify-content: space-around;
     align-items: center;
     font-family: 'Noto Sans', sans-serif;
-    /* font-weight: 100; */
     height: 100%;
     width: 100%;
 }
@@ -19,36 +18,48 @@ body{
 
 header{
     color: black;
-    margin-top: 10px;   
+    margin-top: 12px;
     display: flex; 
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
     align-self: flex-end;
     height: 50px;
-    justify-content: space-around;
-    margin-right: 10px;
     }
 
 header a{
-padding: 10px;}
-
+padding: 10px;
+color: rgba(36, 36, 37, 0.966);
+margin-right: 10px;
+}
 
 header img{
-    width: 40px ;
-    height: 40px;
+    width: 35px ;
+    height: 35px;
     border-radius: 50%;
 
 }
 header img:hover{
     box-shadow: 0 0 6px rgb(196, 191, 191);}
 
+header .apps-container{
+    display: inline-block;
+    width: 20px;
+    padding: 10px;
+    align-items: center;
+    align-items: center;
+    justify-items: center;
+}
 
-.logo{
-    /* background-color: aqua  ; */
-    margin: 30px;
-    padding-bottom: 20px;}
+header .apps-container:hover{
+    background:rgba(60, 64, 67, 0.041);
+    border-radius: 50%;  
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.151);
+    cursor: pointer;
+    
+}
 
- .search-box-container .search-box{
+
+.search-box-container .search-box{
     height: 80%;
     width: 100%;
     font-size:larger;
@@ -57,7 +68,7 @@ header img:hover{
 .search-box-container{
     display: flex;
     height: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border: .2px;
     border-radius: 50px;
     border-style: solid;
@@ -68,6 +79,8 @@ header img:hover{
     min-width:550px ;
     max-width:600px;
 }
+
+
 
 .search-box-container:hover{
     box-shadow: 0 0 6px rgba(194, 189, 189, 0.329);}
@@ -82,9 +95,7 @@ header img:hover{
     padding: 10px;
 
 }
-.search-icon{
-    color: blue;
-}
+
 header a.material-icons-outlined{
     text-decoration: none;
 }
